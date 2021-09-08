@@ -9,3 +9,5 @@ The workflow is as follows:
 - Write Dockerfile to configure all necessary setup. Notice that `train.py` is called from within the Dockerfile (i.e. we train at build-time, which is useful for debugging and version control).
 - Build Docker image from Dockerfile: our trained model lives here.
 - Run a container and launch `inference.py` from within it, where it has access to the pre-trained model and all necessary dependencies.
+
+This is based on a tutorial at https://mlinproduction.com/batch-inference-vs-online-inference/.
