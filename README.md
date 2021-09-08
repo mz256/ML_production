@@ -4,7 +4,7 @@ Playing around with Docker to package a simple predictive model for deployment.
 
 The workflow is as follows:
 - Create/import two separate training and inference routines:
-	- `train.py` loads the training data, fits the model and serialises it in the image's local filesystem for future reference.
+	- `train.py` loads the training data, fits the model and serialises it in the image's local filesystem to be accessed later at inference time.
 	- `inference.py` fetches new data, loads the deserialised model and outputs predictions.
 - Write Dockerfile to configure all necessary setup. Notice that `train.py` is called from within the Dockerfile (i.e. we train at build-time, which is useful for debugging and version control).
 - Build Docker image from Dockerfile: our trained model lives here.
