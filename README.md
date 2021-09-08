@@ -10,4 +10,4 @@ The workflow is as follows:
 - Build Docker image from Dockerfile: our trained model lives here.
 - Run a container and launch `inference.py` from within it, where it has access to the pre-trained model and all necessary dependencies.
 
-This is based on a tutorial at https://mlinproduction.com/batch-inference-vs-online-inference/.
+This is based on a great tutorial at https://mlinproduction.com/docker-for-ml-part-3/.
