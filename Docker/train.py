@@ -54,6 +54,7 @@ def train():
 	print(f"Serialising metadata to: {METADATA_PATH}")
 	with open(METADATA_PATH, 'w') as outfile:
 		json.dump(metadata, outfile)
+		outfile.write("\n")
 
 
 if __name__ == '__main__':
