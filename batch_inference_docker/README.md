@@ -1,4 +1,4 @@
-# Docker for ML deployment
+# Batch inference with Docker
 
 Playing around with Docker to package a simple predictive model for deployment.
 
